@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petloc - Get one stop solution for your pet</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="min-h-screen relative">
+        <div class="absolute h-full inset-0 bg-blob-vertical bg-no-repeat bg-cover bg-center -z-10"></div>
+        <div class="mx-auto max-w-6xl pb-10">
+            <div class="flex flex-col px-4">
+                <!-- Header -->
+                <div class="w-full flex justify-between items-center py-6">
+                    <!-- logo -->
+                    <div class="flex items-center">
+                        <img src="images/logo.png" alt="logo" class="w-36">
+                    </div>
+                    <!-- nav -->
+                    <!-- <div class="flex flex-row items-center justify-center">
+                        <a href="#" class="mx-2">Services</a>
+                        <a href="#" class="mx-2">About us</a>
+                        <a href="#" class="mx-2">Contact</a>
+                    </div> -->
+                    <div class="flex flex-row items-center">
+                        <a href="#" class="mx-2 py-2 px-4 bg-white rounded-full shadow-lg">Download Our App</a>
+                    </div>
+                </div>
+                <!-- Header End -->
+                <!-- Hero Section -->
+                <div class="relative flex flex-col-reverse justify-center items-center md:grid md:grid-cols-2 py-6 -mt-10 md:mt-10">
+                    <div class="flex flex-col justify-center items-center md:items-start gap-6 -mt-10 md:mt-0 overflow-hidden z-10 px-4 md:px-0">
+                        <h1 class="text-4xl md:text-6xl font-bold text-center md:text-left">One stop solution for all your pet services</h1>
+                        <h2 class="text-lg text-center md:text-left">Get wide variety of services including foster house reservation, pet transportation, pet adoption and many more.</h2>
+                        <a href="#" class="mx-4 my-4 md:mx-0 w-full text-center md:w-auto py-2 px-8 bg-white rounded-full shadow-lg border border-gray-200">Visit Our Page</a>
+                    </div>
+                    <!-- Image bottom fade on mobile -->
+                    <div class="relative flex justify-center items-center -z-10">
+                        <img src="images/banner-img.png" class="w-96 md:w-full">
+                        <div class="md:hidden absolute w-full h-[80%] top-20 bottom-0 bg-gradient-to-t from-white to-transparent"></div>
+                    </div>
+                </div>
+                <!-- Hero Section End -->
+                <!-- Services Section -->
+                <div class="flex flex-col items-center gap-8 mt-10 md:mt-28">
+                    <div class="text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+                        <p class="text-xl md:text-xl">Get wide variety of services including foster house reservation, pet transportation, pet adoption and many more.</p>
+                    </div>
+                    <!-- <div class="grid grid-rows-1 md:grid-cols-3 gap-6">
+                        <div class="text-center flex flex-col items-center gap-4 md:bg-white md:p-6 md:rounded-lg md:shadow-lg md:border md:border-gray-200">
+                            <img src="images/services/adoption.png" alt="service" class="w-24">
+                            <h3 class="text-2xl font-bold">Pet Adoption</h3>
+                            <p>Get your pet from our wide variety of pets available for adoption.</p>
+                        </div>
+                        <div class="text-center flex flex-col items-center gap-4 md:bg-white md:p-6 md:rounded-lg md:shadow-lg md:border md:border-gray-200">
+                            <img src="images/services/foster-house.png" alt="service" class="w-24">
+                            <h3 class="text-2xl font-bold">Foster House Reservation</h3>
+                            <p>Get your pet from our wide variety of pets available for adoption.</p>
+                        </div>
+                        <div class="text-center flex flex-col items-center gap-4 md:bg-white md:p-6 md:rounded-lg md:shadow-lg md:border md:border-gray-200">
+                            <img src="images/services/delivery.png" alt="service" class="w-24">
+                            <h3 class="text-2xl font-bold">Pet Transportation</h3>
+                            <p>Get your pet from our wide variety of pets available for adoption.</p>
+                        </div>
+                    </div>  -->
+                    <div class="flex flex-col w-full overflow-hidden">
+                        <!-- Tabs List -->
+                        <div class="grid grid-cols-3 gap-4 md:gap-36 w-full">
+                            <div class="flex flex-col gap-3 w-full slider-tab">
+                                <div class="flex flex-row justify-center items-center gap-2 md:gap-6">
+                                    <div class="flex justify-center items-center bg-white p-1 md:p-4 rounded-sm md:rounded-lg shadow-lg border border-gray-200">
+                                        <img src="images/services/adoption.png" alt="service" class="w-4 md:w-6">
+                                    </div>
+                                    <p class="text-xs md:text-lg font-bold">Adoption</p>
+                                </div>
+                                <div class="relative h-[0.1rem] md:h-1 w-full bg-gray-300 rounded-full overflow-hidden">
+                                    <div class="tab-slider-bar absolute h-full w-full from-red-400 to-yellow-400 rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 w-full slider-tab">
+                                <div class="flex flex-row justify-center items-center gap-2 md:gap-6">
+                                    <div class="flex justify-center items-center bg-white p-1 md:p-4 rounded-sm md:rounded-lg shadow-lg border border-gray-200">
+                                        <img src="images/services/foster-house.png" alt="service" class="w-4 md:w-6">
+                                    </div>
+                                    <p class="text-xs md:text-lg font-bold">Foster House</p>
+                                </div>
+                                <div class="relative h-[0.1rem] md:h-1 w-full bg-gray-300 rounded-full overflow-hidden">
+                                    <div class="tab-slider-bar absolute h-full w-full from-blue-400 to-green-400 rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 w-full slider-tab">
+                                <div class="flex flex-row justify-center items-center gap-2 md:gap-6">
+                                    <div class="flex justify-center items-center bg-white p-1 md:p-4 rounded-sm md:rounded-lg shadow-lg border border-gray-200">
+                                        <img src="images/services/delivery.png" alt="service" class="w-4 md:w-6">
+                                    </div>
+                                    <p class="text-xs md:text-lg font-bold">Transportation</p>
+                                </div>
+                                <div class="relative h-[0.1rem] md:h-1 w-full bg-gray-300 rounded-full overflow-hidden">
+                                    <div class="tab-slider-bar absolute h-full w-full from-yellow-400 to-red-400 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tab Content -->
+                        <div class="slider-content grid md:grid-cols-2 md:gap-6 mt-10 justify-center items-center">
+                            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                                <h3 class="text-2xl font-bold">Easy Adoption</h3>
+                                <p class="text-md">Find your perfect pet available for adoption near you.</p>
+                                <h3 class="text-2xl font-bold mt-6">List Your Pet</h3>
+                                <p class="text-md">List your pet for adoption and find a perfect home for them.</p>
+                                <div class="flex">
+                                    <a href="#" class="mt-6 py-1 px-4 bg-yellow-400 rounded-lg">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <img src="images/adoption.png" alt="service" class="w-96">
+                            </div>
+                        </div>
+                        <div class="slider-content grid md:grid-cols-2 md:gap-6 mt-10 justify-center items-center hidden">
+                            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                                <h3 class="text-2xl font-bold">Easy Foster</h3>
+                                <p class="text-md">Search services for foster house reservation for your pet across Dhaka.</p>
+                                <h3 class="text-2xl font-bold mt-6">Easy Reservation</h3>
+                                <p class="text-md">Reserve foster house for your pet with just a few clicks.</p>
+                                <div class="flex">
+                                    <a href="#" class="mt-6 py-1 px-4 bg-yellow-400 rounded-lg">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <img src="images/adoption.png" alt="service" class="w-96">
+                            </div>
+                        </div>
+                        <div class="slider-content grid md:grid-cols-2 md:gap-6 mt-10 justify-center items-center hidden">
+                            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                                <h3 class="text-2xl font-bold">Safe Delivery</h3>
+                                <p class="text-md">Get your pet delivered to your doorstep with our safe and secure delivery service.</p>
+                                <h3 class="text-2xl font-bold mt-6"> 24/7 Service</h3>
+                                <p class="text-md">We are available 24/7 to deliver your pet to your doorstep.</p>
+                                <div class="flex">
+                                    <a href="#" class="mt-6 py-1 px-4 bg-yellow-400 rounded-lg">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <img src="images/adoption.png" alt="service" class="w-96">
+                            </div>
+                        </div>
+                        <!-- End tab content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/slider.js"></script>
+    <script type="text/javascript">
+        const tabSlider = new TabSlider('.slider-tab', '.tab-slider-bar', '.slider-content');
+        tabSlider.init();
+    </script>
+</body>
+</html>

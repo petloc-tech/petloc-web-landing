@@ -1,0 +1,17 @@
+@import './unineue.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+      @apply relative font-unineue text-base font-normal;
+    }
+}
+
+@layer components {
+    .active-slider-tab {
+      @apply bg-gradient-to-r animate-color-bar;
+    }
+}
