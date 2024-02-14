@@ -14,4 +14,40 @@
     .active-slider-tab {
       @apply bg-gradient-to-r animate-color-bar;
     }
+    .video {
+      @apply relative overflow-hidden rounded-2xl;
+    }
+    .video-thumbnail {
+      @apply relative;
+    }
+    .video-play-btn {
+      @apply absolute top-1/2 left-1/2 z-10 flex h-[78px] w-[78px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary;
+      animation: shadow-pulse 1.5s infinite;
+    }
+    .video-play-btn::after {
+      @apply absolute top-0 left-0 h-full w-full rounded-full content-[""];
+      animation: shadow-pulse-2 1.4s infinite;
+    }
+    @keyframes shadow-pulse {
+      0% {
+        box-shadow: 0 0 0 0px rgba(254, 96, 25, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 35px rgba(254, 96, 25, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(254, 96, 25, 0);
+      }
+    }
+    @keyframes shadow-pulse-2 {
+      0% {
+        box-shadow: 0 0 0 0px rgba(254, 96, 25, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 20px rgba(254, 96, 25, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(254, 96, 25, 0);
+      }
+    }
 }
