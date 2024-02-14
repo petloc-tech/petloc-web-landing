@@ -7,8 +7,8 @@ module.exports = {
         unineue: ["Uni Neue", "sans-serif"],
       },
       backgroundImage: () => ({
-        "blob-horizontal": "url('/src/images/bg-horizontal.svg')",
-        "blob-vertical": "url('/src/images/bg-vertical.svg')",
+        "blob-horizontal": "url('../images/bg-horizontal.svg')",
+        "blob-vertical": "url('../images/bg-vertical.svg')",
       }),
       keyframes: {
         "color-bar": {
