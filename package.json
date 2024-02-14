@@ -7,8 +7,7 @@
   },
   "scripts": {
     "watch": "tailwindcss -i ./styles.css -o ./src/css/styles.css --watch",
-    "copy": "copyfiles ./src/**/* ./public",
-    "build": "tailwindcss -i ./styles.css -o ./src/css/styles.css --minify && npm run copy"
+    "build": "tailwindcss -i ./styles.css -o ./src/css/styles.css --minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
