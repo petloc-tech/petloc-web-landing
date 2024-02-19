@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petloc - Get one stop solution for your pet</title>
   <link rel="stylesheet" href="css/styles.css">
+  <!-- Swiper slider -->
+  <link rel="stylesheet" href="js/swiper/swiper-bundle.css" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJGNTMZQBS"></script>
   <script>
@@ -20,7 +22,7 @@
 <body>
   <div class="min-h-screen relative">
     <div class="absolute h-full inset-0 bg-blob bg-no-repeat bg-cover bg-center -z-10"></div>
-    <div class="mx-auto max-w-6xl">
+    <section class="mx-auto max-w-6xl">
       <div class="flex flex-col px-4">
         <!-- Header -->
         <div class="w-full flex justify-between items-center py-6">
@@ -48,16 +50,17 @@
           </div>
           <!-- Image bottom fade on mobile -->
           <div class="relative flex justify-center items-center -z-10">
-            <img src="images/banner-img.png" class="w-96 md:w-full">
+            <img src="images/banner-img.png" class="w-96 md:w-full animate-smooth-upandown"
+              alt="banner" />
             <div class="md:hidden absolute w-full h-[80%] top-20 bottom-0 bg-gradient-to-t from-white to-transparent">
             </div>
           </div>
         </div>
         <!-- Hero Section End -->
       </div>
-    </div>
+    </section>
     <!-- Services Section -->
-    <div class="bg-primary w-full py-5 md:mt-20">
+    <section class="bg-primary w-full py-5 md:mt-20">
       <div class="mx-auto max-w-6xl">
         <div class="flex flex-col px-4">
           <div class="flex flex-col items-center gap-8 mt-10">
@@ -162,11 +165,11 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="mx-auto max-w-6xl">
+    </section>
+    <section class="mx-auto max-w-6xl">
       <!-- Video section -->
       <div class="flex flex-col md:flex-row mt-12 justify-between items-center px-6">
-        <div class="lg:col-7 lg:order-2">
+        <div class="lg:order-2">
           <div class="video pb-5 pr-9">
             <div class="video-thumbnail overflow-hidden rounded-2xl">
               <img class="w-full object-contain" src="images/intro-thumbnail.png" alt="" />
@@ -178,10 +181,10 @@
               <iframe class="h-full w-full" allowfullscreen=""
                 src="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1"></iframe>
             </div>
-            <img class="intro-shape absolute bottom-0 right-0 -z-[1]" src="images/shape.svg" alt="" />
+            <img class="intro-shape absolute bottom-0 right-0 -z-[1] animate-smooth-upandown" src="images/shape.svg" alt="" />
           </div>
         </div>
-        <div class="mt-6 lg:col-5 lg:order-1 lg:mt-0">
+        <div class="mt-6 lg:order-1 lg:mt-0">
           <div class="text-container">
             <h2 class="text-2xl lg:text-4xl font-bold">Get all you need</h2>
             <p class="mt-4 text-lg">
@@ -199,26 +202,114 @@
             <img src="images/icons/pawprint.svg" class="w-8 md:w-10" />
             <div class="flex flex-col">
               <h1 class="text-xl md:text-2xl font-bold md:text-center">Adoption</h1>
-              <h2 class="text-lg md:text-xl md:text-center">200+</h2>
+              <h2 class="text-lg md:text-xl md:text-center" id="total-adoptions">200+</h2>
             </div>
           </div>
           <div class="flex flex-row md:flex-col gap-6 md:gap-4 md:justify-center items-center p-4 pl-6 md:pl-0">
             <img src="images/icons/dog-house.svg" class="w-8 md:w-10" />
             <div class="flex flex-col">
               <h1 class="text-xl md:text-2xl font-bold md:text-center">Foster House</h1>
-              <h2 class="text-lg md:text-xl md:text-center">50+</h2>
+              <h2 class="text-lg md:text-xl md:text-center" id="total-house">50+</h2>
             </div>
           </div>
           <div class="flex flex-row md:flex-col gap-6 md:gap-4 md:justify-center items-center p-4 pl-6 md:pl-0">
             <img src="images/icons/bike-city.svg" class="w-8 md:w-10" />
             <div class="flex flex-col">
               <h1 class="text-xl md:text-2xl font-bold md:text-center">Delivery</h1>
-              <h2 class="text-lg md:text-xl md:text-center">100+</h2>
+              <h2 class="text-lg md:text-xl md:text-center" id="total-deliveries">100+</h2>
             </div>
           </div>
         </div>
       </div>
       <!-- Service information section end -->
+      <!-- Reviews -->
+      <div class="mt-2 md:mt-8 mb-10">
+        <div class="flex flex-col px-6">
+          <div class="w-full mb-6 grid md:grid-cols-3 md:items-center">
+            <h2 class="text-2xl font-bold md:col-span-2">Our customers have nice things to say about us</h2>
+            <p class="mt-3 md:mt-0 md:text-right text-gray-600">
+              We are always happy to hear from our customers
+            </p>
+          </div>
+          <div class="mt-10">
+            <div class="swiper reviews-carousel">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="review">
+                    <div class="review-author-avatar bg-gradient">
+                      <img src="images/users/user-5.png" alt="" />
+                    </div>
+                    <h4 class="mb-2">Courtney Henry</h4>
+                    <p class="mb-4 text-[#666]">microsoft corp</p>
+                    <p>
+                      Our platform helps build secure onboarding authentica
+                      experiences & engage your users. We build .
+                    </p>
+                    <div
+                      class="review-rating mt-6 flex items-center justify-center space-x-1"
+                    >
+                      <img src="images/icons/paw.svg" class="w-10 h-10" />
+                      <img src="images/icons/paw.svg" class="w-10 h-10" />
+                      <img src="images/icons/paw.svg" class="w-10 h-10" />
+                      <img src="images/icons/paw.svg" class="w-10 h-10" />
+                      <img src="images/icons/paw-white.svg" class="w-10 h-10" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review">
+                    <div class="review-author-avatar bg-gradient">
+                      <img src="images/users/user-2.png" alt="" />
+                    </div>
+                    <h4 class="mb-2">Ronald Richards</h4>
+                    <p class="mb-4 text-[#666]">meta limited</p>
+                    <p>
+                      Our platform helps build secure onboarding authentica
+                      experiences & engage your users. We build .
+                    </p>
+                    <div
+                      class="review-rating mt-6 flex items-center justify-center space-x-1"
+                    >
+                      <img src="images/icons/paw.svg" class="w-10 h-10" />
+                      <img src="images/icons/paw.svg" class="w-10 h-10" />
+                      <img src="images/icons/paw.svg" class="w-10 h-10" />
+                      <img src="images/icons/paw.svg" class="w-10 h-10" />
+                      <img src="images/icons/paw-white.svg" class="w-10 h-10" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review">
+                    <div class="review-author-avatar bg-gradient">
+                      <img src="images/users/user-6.png" alt="" />
+                    </div>
+                    <h4 class="mb-2">Bessie Cooper</h4>
+                    <p class="mb-4 text-[#666]">apple inc ltd</p>
+                    <p>
+                      Our platform helps build secure onboarding authentica
+                      experiences & engage your users. We build .
+                    </p>
+                    <div
+                      class="review-rating mt-6 flex items-center justify-center space-x-1"
+                    >
+                      <img src="images/icons/paw.svg" class="w-10 h-10" />
+                      <img src="images/icons/paw.svg" class="w-10 h-10" />
+                      <img src="images/icons/paw.svg" class="w-10 h-10" />
+                      <img src="images/icons/paw.svg" class="w-10 h-10" />
+                      <img src="images/icons/paw-white.svg" class="w-10 h-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div
+                class="swiper-pagination reviews-carousel-pagination !bottom-0"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Reviews -->
       <!-- partner section -->
       <div class="py-10">
         <div class="flex flex-col">
@@ -305,20 +396,14 @@
           </div>
         </div>
       </footer>
-    </div>
+    </section>
   </div>
+  <!-- Tab Slider -->
   <script src="js/slider.js"></script>
-  <script type="text/javascript">
-    const tabSlider = new TabSlider('.slider-tab', '.tab-slider-bar', '.slider-content');
-    tabSlider.init();
-    const videoPlayBtn = document.querySelector(".video-play-btn");
-    if (videoPlayBtn) {
-      videoPlayBtn.addEventListener("click", function () {
-        const videoPlayer = this.closest(".video").querySelector(".video-player");
-        videoPlayer.classList.remove("hidden");
-      });
-    }
-  </script>
+  <!-- Swiper JS -->
+  <script src="js/swiper/swiper-bundle.js"></script>
+  <!-- Main js -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
