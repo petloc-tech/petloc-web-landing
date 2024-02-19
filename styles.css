@@ -25,10 +25,14 @@
       @apply bg-gradient-to-r animate-color-bar;
     }
     .review {
-      @apply my-16 rounded-xl bg-white px-3 py-6 pb-16 text-center smooth-shadow-lg;
+      @apply my-16 rounded-xl bg-white px-3 py-6 pb-16 text-center smooth-shadow;
     }
     .review-author-avatar {
       @apply mx-auto -mt-12 h-[90px] w-[90px] -translate-y-5 rounded-full p-0.5;
+    }
+
+    .review-author-avatar img {
+      @apply object-cover w-full h-full rounded-full;
     }
     
     .reviews-carousel .swiper-pagination-bullet {
@@ -53,7 +57,7 @@
     }
     @keyframes shadow-pulse {
       0% {
-        box-shadow: 0 0 0 0px rgba(254, 96, 25, 0.7);
+        box-shadow: 0 0 0 0px #febb40;
       }
       70% {
         box-shadow: 0 0 0 35px rgba(254, 96, 25, 0);
@@ -64,7 +68,7 @@
     }
     @keyframes shadow-pulse-2 {
       0% {
-        box-shadow: 0 0 0 0px rgba(254, 96, 25, 0.7);
+        box-shadow: 0 0 0 0px #febb40;
       }
       70% {
         box-shadow: 0 0 0 20px rgba(254, 96, 25, 0);

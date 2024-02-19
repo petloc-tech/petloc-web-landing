@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /**
    * reviews-carousel
-  **/
+   **/
   new Swiper(".reviews-carousel", {
     loop: true,
     spaceBetween: 20,
@@ -44,22 +44,23 @@ document.addEventListener("DOMContentLoaded", () => {
    * Counter initialization
    **/
 
-  const increment = (element, count, delay) => {
-    let i = 0;
-    const interval = setInterval(() => {
-      i++;
-      element.innerHTML = i + "+";
-      if (i === count) {
-        clearInterval(interval);
-      }
-    }, delay);
+  const counters = (delay = null) => {
+    const counterEl = document.querySelectorAll(".counter.count");
+    counterEl.forEach((counter) => {
+      const target = +counter.textContent.replace(/\D/g, "");
+      const suffix = counter.getAttribute("data-suffix");
+      const prefix = counter.getAttribute("data-prefix");
+      const duration = counter.getAttribute("data-delay") || delay;
+      let count = 0;
+      const interval = setInterval(() => {
+        count++;
+        counter.textContent = `${prefix || ""}${count}${suffix || ""}`;
+        if (count === target) {
+          clearInterval(interval);
+        }
+      }, duration);
+    });
   };
 
-  const adoption = document.querySelector("#total-adoptions");
-  const foster = document.querySelector("#total-house");
-  const delivery = document.querySelector("#total-deliveries");
-
-  increment(adoption, 200, 20);
-  increment(foster, 50, 40);
-  increment(delivery, 100, 30);
+  counters();
 });
