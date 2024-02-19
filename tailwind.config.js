@@ -19,9 +19,15 @@ module.exports = {
           "0%": { left: "-100%" },
           "100%": { left: "100%" },
         },
+        "smooth-upandown": {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-5px)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
       animation: {
         "color-bar": "color-bar 5s linear infinite",
+        "smooth-upandown": "smooth-upandown 3s ease-in-out infinite",
       },
     },
   },
